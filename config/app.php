@@ -183,11 +183,16 @@ return [
 
 		// HTML and Form Support
 		Collective\Html\HtmlServiceProvider::class,
-		
+
 		// Markdown service profider
 		GrahamCampbell\Markdown\MarkdownServiceProvider::class,
-		
+
 		Subdesign\LaravelCliUser\CliUserServiceProvider::class,
+		
+		//coldreader multiuser
+		imonroe\coldreader_multiuser\coldreader_multiuserServiceProvider::class,
+		// roles and permissions
+		Spatie\Permission\PermissionServiceProvider::class,
     ],
 
     /*
@@ -244,6 +249,7 @@ return [
 		'Form' => Collective\Html\FormFacade::class,
         'Html' => Collective\Html\HtmlFacade::class,
 		'Markdown' => GrahamCampbell\Markdown\Facades\Markdown::class,
+		'User' => imonroe\coldreader_multiuser\User::class,
 
 	],
 
